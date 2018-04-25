@@ -1,0 +1,19 @@
+---
+layout: article
+---
+<div class="container mt50 pb30">
+  <div itemscope itemtype="http://schema.org/Article">
+    <article class="entry">
+      <h2 class="entry-title text-center"><span itemprop="headline">{{ page.title }}</span></h2>
+      <div class="entry-meta text-center">
+        <span itemprop="dateCreated"><i class="fa fa-calendar"></i>{{ page.date | date:"%d %b %Y" }}</span>
+        <span><i class="fa fa-tag"></i> {{ page.keywords }}</span>
+      </div>
+      <div class="entry-content">
+        <span itemprop="articleBody">
+          {{ content }}
+        </span>
+      </div>
+    </article>
+  </div>
+</div>

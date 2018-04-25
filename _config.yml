@@ -1,0 +1,50 @@
+url: https://www.exinxun.com
+
+title: Sunshine
+
+keywords: mobile phone repair tools
+
+description: Sunshine is specilized in mobile phone repairing tools.As a global leading one-step service platform in China, we aim to provide you best products.
+
+oswweb-mail-url: https://osweb.sdyea.org/oswweb-mail
+
+company: Guangzhou Sunshine Electronic Technology Co.,Ltd.
+
+address: No.283,Longxi Road,Liwan District,GuangZhou,China.
+
+tel1: +86-18813293139
+
+tel2: +86-13922280232
+
+tel3: +86-18102250811
+
+email: sunshine01@exinxun.com
+
+facebook: https://www.facebook.com/VIPSUNSHINETOOLS
+
+twitter: https://twitter.com/cellrepairtools
+
+linkedin: https://www.linkedin.com/company/13614919/
+
+github: https://github.com/
+
+youtube: https://www.youtube.com/channel/UCZnizxYbSe547Dh9sWtjKaw
+
+permalink: /products/:title.html
+
+relative_permalinks: false
+
+exclude:
+  - README.md
+  - beifen
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/js
+    - _assets/css
+  compress:
+    css: true
+    js: true
+  gzip: []
