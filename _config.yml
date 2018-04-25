@@ -1,42 +1,31 @@
 url: https://www.exinxun.com
 
-title: Sunshine
+title: TOMBARBAR
 
-keywords: mobile phone repair tools
+keywords: 
 
-description: Sunshine is specilized in mobile phone repairing tools.As a global leading one-step service platform in China, we aim to provide you best products.
+description: 
 
-oswweb-mail-url: https://osweb.sdyea.org/oswweb-mail
+company: 
 
-company: Guangzhou Sunshine Electronic Technology Co.,Ltd.
+address: Room 1108-1109,11/F Caizhi Building,NO.448 Guangzhou Street South,Guangzhou,China
 
-address: No.283,Longxi Road,Liwan District,GuangZhou,China.
+tel: +86-020-89233420
 
-tel1: +86-18813293139
+fax: +86-020-89104995
 
-tel2: +86-13922280232
+email: jennyl@tombarbarbag.com
 
-tel3: +86-18102250811
+facebook: https://www.facebook.com/
 
-email: sunshine01@exinxun.com
+twitter: https://twitter.com/
 
-facebook: https://www.facebook.com/VIPSUNSHINETOOLS
+linkedin: https://www.linkedin.com/
 
-twitter: https://twitter.com/cellrepairtools
-
-linkedin: https://www.linkedin.com/company/13614919/
-
-github: https://github.com/
-
-youtube: https://www.youtube.com/channel/UCZnizxYbSe547Dh9sWtjKaw
-
-permalink: /products/:title.html
-
-relative_permalinks: false
+youtube: https://www.youtube.com/
 
 exclude:
   - README.md
-  - beifen
 
 assets:
   dirname: assets
