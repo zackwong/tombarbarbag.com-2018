@@ -2,27 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Unishop | Universal E-Commerce Template</title>
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Unishop - Universal E-Commerce Template">
-    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-
-    <!-- Mobile Specific Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/tombarbar-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="TOMBARBAR">
     <link rel="stylesheet" media="screen" href="/css/vendor.min.css">
-    <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" media="screen" href="/css/styles.css">
-    <!-- Modernizr-->
     <script src="/js/modernizr.min.js"></script>
   </head>
-  <!-- Body-->
   <body>
-    <!-- Off-Canvas Category Menu-->
     <div class="offcanvas-container" id="shop-categories">
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title">Shop Categories</h3>
+        <h3 class="offcanvas-title">PRODUCTS</h3>
       </div>
       <nav class="offcanvas-menu">
         <ul class="menu">
@@ -269,9 +264,9 @@
     </div>
     <!-- Topbar-->
     <div class="topbar">
-      <div class="topbar-column"><a class="hidden-md-down" href="mailto:support@unishop.com"><i class="icon-mail"></i>&nbsp; support@unishop.com</a><a class="hidden-md-down" href="tel:00331697720"><i class="icon-bell"></i>&nbsp; 00 33 169 7720</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
+      <div class="topbar-column"><a class="hidden-md-down" href="mailto:support@unishop.com"><i class="icon-mail"></i>&nbsp; support@unishop.com</a><a class="hidden-md-down" href="tel:00331697720"><i class="icon-bell"></i>&nbsp; 00 33 169 7720</a>
       </div>
-      <div class="topbar-column"><a class="hidden-md-down" href="#"><i class="icon-download"></i>&nbsp; Get mobile app</a>
+      <div class="topbar-column"><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
         <div class="lang-currency-switcher-wrap">
           <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="/images/assets/en.png"></span></div>
           <div class="dropdown-menu">
@@ -293,7 +288,7 @@
         <div class="inner">
           <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
           <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
-          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="Unishop"></a>
+          <!-- Site Logo--><a class="site-logo" href="{{ site.url }}"><img src="/images/assets/tombarbar-logo.png" alt="TOMBARBAR Logo"></a>
         </div>
       </div>
       <!-- Main Navigation-->
@@ -575,7 +570,7 @@
           </div>
           <hr class="hr-light mt-2">
           <!-- Copyright-->
-          <p class="footer-copyright">© All rights reserved. Made with &nbsp;<i class="icon-heart text-danger"></i><a href="http://rokaux.com/" target="_blank"> &nbsp;by rokaux</a></p>
+          <p class="footer-copyright">©2015-2018 Guangzhou Bloom-Win Fashion Co,. Ltd All Rights Reserved | <a itemprop="url" href="{{ site.url }}/sitemap.xml">Sitemap</a> | Website designed by <a href="https://gdky.net" target="_blank">OSW</a></p>
         </div>
       </footer>
     </div>
