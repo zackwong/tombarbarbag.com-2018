@@ -6,16 +6,16 @@ title: News
 keywords: News
 description: News
 ---
-<article class="row">{% for post in site.categories["news"] %}
+{% for post in site.categories["news"] %}<article class="row">
   <div class="col-md-3 order-md-2">
     <ul class="post-meta">
-      <li><i class="icon-clock"></i>&nbsp;{{ post.date | date:"%d %b %Y" }}</a></li>
-      <li><i class="icon-tag"></i>&nbsp;{{ post.keywords }}</li>
+      <li><i class="icon-clock"></i> {{ post.date | date:"%d %b %Y" }}</a></li>
+      <li><i class="icon-tag"></i> {{ post.keywords }}</li>
     </ul>
   </div>
   <div class="col-md-9 order-md-1 blog-post">
     <a class="post-thumb" href="{{ site.url }}{{ post.url }}"><img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
     <h3 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-    <p>{{ post.description }}<a href='{{ site.url }}{{ post.url }}' class='text-medium'>Read More</a></p>
+    <p>{{ post.description }}<a href="{{ site.url }}{{ post.url }}" class="text-medium">Read More</a></p>
   </div>
 </article>{% endfor %}
