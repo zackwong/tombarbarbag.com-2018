@@ -65,25 +65,8 @@
               <li><a href="#">View All</a></li>
             </ul>
           </li>
-          <li class="has-children"><span><a href="#">Bags</a><span class="sub-menu-toggle"></span></span>
-            <ul class="offcanvas-submenu">
-              <li><a href="#">Handbags</a></li>
-              <li><a href="#">Backpacks</a></li>
-              <li><a href="#">Luggage</a></li>
-              <li><a href="#">Wallets</a></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
-          <li class="has-children"><span><a href="#">Accessories</a><span class="sub-menu-toggle"></span></span>
-            <ul class="offcanvas-submenu">
-              <li><a href="#">Sunglasses</a></li>
-              <li><a href="#">Hats</a></li>
-              <li><a href="#">Watches</a></li>
-              <li><a href="#">Jewelry</a></li>
-              <li><a href="#">Belts</a></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
+          
+          
         </ul>
       </nav>
     </div>
@@ -270,8 +253,7 @@
       <!-- Main Navigation-->
       <nav class="site-menu">
         <ul>
-          <li class="has-megamenu active"><a href="index.html"><span>Home</span></a></li>
-          <li class="has-megamenu"><a href="#"><span>Products</span></a>
+          <li class="has-megamenu{% if page.category == 'products' %} active{% endif %}"><a href="#"><span>Products</span></a>
             <ul class="mega-menu">
               <li><span class="mega-menu-title">Top Categories</span>
                 <ul class="sub-menu">
@@ -312,9 +294,9 @@
               </li>
             </ul>
           </li>
-          <li class="has-megamenu"><a href="{{ site.url }}/news/"><span>News</span></a></li>
-          <li class="has-megamenu"><a href="{{ site.url }}/about/"><span>About TOMBARBAR</span></a></li>
-          <li class="has-megamenu"><a href="{{ site.url }}/contact/"><span>Contact Us</span></a></li>
+          <li class="has-megamenu{% if page.category == 'news' %} active{% endif %}"><a href="{{ site.url }}/news/"><span>News</span></a></li>
+          <li class="has-megamenu{% if page.category == 'about' %} active{% endif %}"><a href="{{ site.url }}/about/"><span>About TOMBARBAR</span></a></li>
+          <li class="has-megamenu{% if page.category == 'contact' %} active{% endif %}"><a href="{{ site.url }}/contact/"><span>Contact Us</span></a></li>
         </ul>
       </nav>
       <div class="toolbar">
