@@ -13,10 +13,10 @@ description: News
       <li><i class="icon-tag"></i> {{ post.keywords }}</li>
     </ul>
   </div>
-  <div class="col-md-9 order-md-1 blog-post">
+  <div class="col-md-9 order-md-1 blog-post text-center">
     <a class="post-thumb" href="{{ site.url }}{{ post.url }}"><img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
     <h3 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
     <p>{{ post.description }}</p>
-    <p><a href="{{ site.url }}{{ post.url }}" class="btn btn-outline-primary btn-sm mt-1">Read More</a></p>
+    <p><a href="{{ site.url }}{{ post.url }}" class="btn btn-primary btn-sm mt-4">Read More</a></p>
   </div>
 </article>{% endfor %}
