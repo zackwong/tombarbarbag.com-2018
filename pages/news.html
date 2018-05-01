@@ -6,7 +6,7 @@ title: News
 keywords: News
 description: News
 ---
-{% for post in site.categories["news"] %}<article class="row">
+<article class="row">{% for post in site.categories["news"] %}
   <div class="col-md-3 order-md-2">
     <ul class="post-meta">
       <li><i class="icon-clock"></i>&nbsp;{{ post.date | date:"%d %b %Y" }}</a></li>
