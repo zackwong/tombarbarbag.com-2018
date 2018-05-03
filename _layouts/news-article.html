@@ -1,14 +1,9 @@
 ---
 layout: article
 ---
-<h2 class="padding-top-2x text-center">{{ page.title }}</h2>
-<div class="single-post-meta">  
-  <div class="column">
-    <div class="meta-link"><i class="icon-clock"></i>{{ page.date | date:"%d %b %Y" }}</div>
-  </div>
-  <div class="column">
-    <div class="meta-link"><i class="icon-tag"></i>{{ page.keywords }}</div>
-  </div>
+<h2 class="text-center">{{ page.title }}</h2>
+<h4 class="text-center">{{ page.date | date:"%d %b %Y" }}</h4>
+<div class="padding-top-2x">
+  {{ content }}
 </div>
-{{ content }}
-<p><a href="https://www.tombarbarbag.com/news/test-news1.html" class="btn btn-primary btn-sm mt-4">More News</a></p>
+<p class="padding-top-2x"><a href="https://www.tombarbarbag.com/news/test-news1.html" class="btn btn-primary btn-sm mt-4">More News</a></p>
