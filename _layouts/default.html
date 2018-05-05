@@ -306,21 +306,20 @@
     <footer class="site-footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-md-12">
-              <!-- Contact Info-->
+            <div class="col-lg-5 col-md-12">
               <section class="widget widget-light-skin">
                 <h3 class="widget-title">Contact Info</h3>
-                <p class="text-white"><i class="fa fa-map-marker"></i>{{ site.address }}</p>
-                <p class="text-white"><i class="fa fa-phone"></i>{{ site.tel }}</p>
-                <p class="text-white"><i class="fa fa-fax"></i>{{ site.fax }}</p>
-                <p class="text-white"><i class="fa fa-envelope"></i><a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                <p class="text-white"><i class="fa fa-map-marker"></i> {{ site.address }}</p>
+                <p class="text-white"><i class="fa fa-phone"></i> {{ site.tel }}</p>
+                <p class="text-white"><i class="fa fa-fax"></i> {{ site.fax }}</p>
+                <p class="text-white"><i class="fa fa-envelope"></i> <a class="navi-link-light" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
                 <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a>
                 <a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a>
                 <a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a>
                 <a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a>
               </section>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-3 col-md-12">
               <section class="widget widget-links widget-light-skin">
                 <h3 class="widget-title">Products</h3>
                 <ul>
@@ -335,7 +334,7 @@
                 </ul>
               </section>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 hidden-xs">
               <section class="widget widget-links widget-light-skin">
                 <h3 class="widget-title">Last News</h3>
                 <ul>{% for post in site.categories["news"] %}
