@@ -280,7 +280,7 @@
                 <section class="promo-box" style="background-image: url(img/banners/03.jpg);">
                   <span class="overlay-dark" style="opacity: .45;"></span>
                   <div class="promo-box-content text-center padding-top-2x padding-bottom-2x">
-                    <h3 class="text-bold text-light text-shadow">New arrival</h3>
+                    <h3 class="text-bold text-light text-shadow">New Arrival</h3>
                     <a class="btn btn-sm btn-primary" href="#">Learn More</a>
                   </div>
                 </section>
@@ -306,52 +306,45 @@
     <footer class="site-footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-12">
               <!-- Contact Info-->
               <section class="widget widget-light-skin">
-                <h3 class="widget-title">Get In Touch With Us</h3>
-                <p class="text-white">Phone: 00 33 169 7720</p>
-                <ul class="list-unstyled text-sm text-white">
-                  <li><span class="opacity-50">Monday-Friday:</span>9.00 am - 8.00 pm</li>
-                  <li><span class="opacity-50">Saturday:</span>10.00 am - 6.00 pm</li>
-                </ul>
-                <p><a class="navi-link-light" href="#">support@unishop.com</a></p><a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a>
+                <h3 class="widget-title">Contact Info</h3>
+                <p class="text-white"><i class="fa fa-map-marker"></i>{{ site.address }}</p>
+                <p class="text-white"><i class="fa fa-phone"></i>{{ site.tel }}</p>
+                <p class="text-white"><i class="fa fa-fax"></i>{{ site.fax }}</p>
+                <p class="text-white"><i class="fa fa-envelope"></i><a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                <a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a>
+                <a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a>
+                <a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a>
+                <a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a>
               </section>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <!-- Mobile App Buttons-->
-             
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <!-- About Us-->
+            <div class="col-lg-4 col-md-12">
               <section class="widget widget-links widget-light-skin">
-                <h3 class="widget-title">About Us</h3>
+                <h3 class="widget-title">Products</h3>
                 <ul>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">About Unishop</a></li>
-                  <li><a href="#">Our Story</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Our Blog</a></li>
+                  <li><a href="{{ site.url }}/featured-products/">Featured Products</a></li>
+                  <li><a href="{{ site.url }}/new-arrival/">New Arrival</a></li>
+                  <li><a href="{{ site.url }}/handbag/">Handbag</a></li>
+                  <li><a href="{{ site.url }}/totes/">Totes</a></li>
+                  <li><a href="{{ site.url }}/clutches/">Clutches</a></li>
+                  <li><a href="{{ site.url }}/backpack/">Backpack</a></li>
+                  <li><a href="{{ site.url }}/accessories/">Accessories</a></li>
+                  <li><a href="{{ site.url }}/childrens-series/">Children's Series</a></li>
                 </ul>
               </section>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <!-- Account / Shipping Info-->
+            <div class="col-lg-4 col-md-12">
               <section class="widget widget-links widget-light-skin">
-                <h3 class="widget-title">Account &amp; Shipping Info</h3>
-                <ul>
-                  <li><a href="#">Your Account</a></li>
-                  <li><a href="#">Shipping Rates & Policies</a></li>
-                  <li><a href="#">Refunds & Replacements</a></li>
-                  <li><a href="#">Taxes</a></li>
-                  <li><a href="#">Delivery Info</a></li>
-                  <li><a href="#">Affiliate Program</a></li>
+                <h3 class="widget-title">Last News</h3>
+                <ul>{% for post in site.categories["news"] %}
+                  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                 </ul>
               </section>
             </div>
           </div>
           <hr class="hr-light mt-2">
-          <!-- Copyright-->
           <p class="footer-copyright text-center">©2015-2018 Guangzhou Bloom-Win Fashion Co,. Ltd All Rights Reserved | <a itemprop="url" href="{{ site.url }}/sitemap.xml">Sitemap</a> | Website designed by <a href="https://gdky.net" target="_blank">OSW</a></p>
         </div>
       </footer>
