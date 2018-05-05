@@ -6,3 +6,15 @@ title: Contact Us
 keywords: Contact Us
 description: Contact Us
 ---
+<div class="col-sm-6">
+  <div class="card mb-30">
+    <div class="google-map" data-height="250" data-address="{{ site.address }}" data-zoom="15" data-disable-controls="true" data-scrollwheel="false" data-marker="/images/assets/map-marker.png" data-marker-title="{{ site.company }}" data-styles="[{&quot;featureType&quot;:&quot;administrative.country&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;},{&quot;hue&quot;:&quot;#ff0000&quot;}]}]"></div>
+    <div class="card-body">
+      <ul class="list-icon">
+        <li> <i class="icon-map"></i>{{ site.address }}</li>
+        <li> <i class="icon-bell"></i>{{ site.tel }}</li>
+        <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
