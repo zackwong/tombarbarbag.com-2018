@@ -206,14 +206,14 @@ full_title: TOMBARBAR
 <section class="container padding-top-3x padding-bottom-3x">
   <h3 class="text-center mb-30">Last News</h3>
   <div class="row">{% for post in site.categories["news"] %}
-    <div class="col-md-4 col-sm-6 mb-30">
-      <div class="card text-center">
-      <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
-      <div class="card-body">
-        <h4 class="card-title">{{ post.title }}</h4>
-        <p class="card-text">{{ post.date | date:"%d %b %Y" }}</p>
-        <p class="card-text">{{ post.description }}</p>
-        <a class="btn btn-primary btn-sm" href="{{ site.url }}{{ post.url }}">Read More</a>
+    <div class="col-md-4 col-sm-6">
+      <div class="card text-center mb-30">
+        <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+        <div class="card-body">
+          <h4 class="card-title">{{ post.title }}</h4>
+          <p class="card-text">{{ post.description }}</p>
+          <a class="btn btn-primary btn-sm" href="{{ site.url }}{{ post.url }}">Read More</a>
+        </div>
       </div>
     </div>{% endfor %}
   </div>
