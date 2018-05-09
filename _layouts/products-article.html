@@ -1,106 +1,49 @@
 ---
 layout: article
 ---
-<div class="container pt70 mb70">
-  <div class="row">
-    <div itemscope itemtype="http://schema.org/Product">
-      <div class="col-md-6">
-        <div id="carousel-example-generic" class="portfolio-post-media carousel slide" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">{% if page.proimg == 'one' %}
-            <div class="item active"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>{% endif %}{% if page.proimg == 'two' %}
-            <div class="item active"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>{% endif %}{% if page.proimg == 'three' %}
-            <div class="item active"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>{% endif %}{% if page.proimg == 'five' %}
-            <div class="item active"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>
-            <div class="item"><a data-fancybox="gallery" data-caption="{{ page.name }} {{ page.title }}" href="/images/products/{{ page.image }}-5.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-5.jpg" alt="{{ page.name }} {{ page.title }}"></a></div>{% endif %}
-          </div>
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="fa fa-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="fa fa-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="product-gallery">
+      <div class="gallery-wrapper">
+        <div class="gallery-item active"><a href="/images/products/{{ page.image }}-1.jpg" data-hash="one" data-size="1000x667"></a></div>
+        <div class="gallery-item"><a href="/images/products/{{ page.image }}-2.jpg" data-hash="two" data-size="1000x667"></a></div>
+        <div class="gallery-item"><a href="/images/products/{{ page.image }}-3.jpg" data-hash="three" data-size="1000x667"></a></div>
+        <div class="gallery-item"><a href="/images/products/{{ page.image }}-4.jpg" data-hash="four" data-size="1000x667"></a></div>
+        <div class="gallery-item"><a href="/images/products/{{ page.image }}-5.jpg" data-hash="five" data-size="1000x667"></a></div>
       </div>
-      <div class="col-md-6">
-        <div class="portfolio-post-content">
-          <h2 class="portfolio-title text-center"><span itemprop="name">{{ page.name }} {{ page.title }}</span></h2>
-          <ul class="portfolio-post-meta-list">
-            <li><span>Name:</span> {{ page.name }}</li>
-            <li><span>Model:</span> {{ page.title }}</li>
-            {{ content }}
-          </ul>
-        </div>
+      <div class="product-carousel owl-carousel">
+        <div data-hash="one"><img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}"></div>
+        <div data-hash="two"><img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}"></div>
+        <div data-hash="three"><img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}"></div>
+        <div data-hash="four"><img src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}"></div>
+        <div data-hash="five"><img src="/images/products/{{ page.image }}-5.jpg" alt="{{ page.title }}"></div>
       </div>
+      <ul class="product-thumbnails">
+        <li class="active"><a href="#one"><img src="/images/products/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#two"><img src="/images/products/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#three"><img src="/images/products/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#four"><img src="/images/products/{{ page.image }}-4s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#five"><img src="/images/products/{{ page.image }}-5s.jpg" alt="{{ page.title }}"></a></li>
+      </ul>
     </div>
   </div>
-  <div class="row mb30">{% if page.video == 'you' %}
-    <div class="col-md-3">
-      <a data-fancybox="{{ page.name }} {{ page.title }} Video" href="https://vimeo.com/{{ page.video }}"><img class="img-thumbnail mb30" src="/images/products/products-video.jpg" alt="{{ page.name }} {{ page.title }} Video"></a>
-    </div>{% endif %}{% if page.instructions == 'you' %}
-    <div class="col-md-3">
-      <a href="{{ page.instructions }}" target="_blank"><img class="img-thumbnail mb30" src="/images/products/products-instructions.jpg" alt="{{ page.name }} {{ page.title }} Instructions"></a>
-    </div>{% endif %}{% if page.details == 'you' %}
-    <div class="col-md-3">
-      <a href="/images/products/{{ page.image }}-details-1.jpg" data-fancybox="images-preview"><img class="img-thumbnail mb30" src="/images/products/products-details.jpg" alt="{{ page.name }} {{ page.title }} Details"></a>
-    </div>{% endif %}
-    <div style="display: none;">{% if page.details == 'six' %}
-      <a href="/images/products/{{ page.image }}-details-2.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-2.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-3.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-3.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-4.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-4.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-5.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-5.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-6.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-6.jpg"></a>{% endif %}{% if page.details == 'ten' %}
-      <a href="/images/products/{{ page.image }}-details-2.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-2.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-3.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-3.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-4.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-4.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-5.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-5.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-6.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-6.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-7.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-7.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-8.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-8.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-9.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-9.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-10.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-10.jpg"></a>{% endif %}{% if page.details == 'twelve' %}
-      <a href="/images/products/{{ page.image }}-details-2.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-2.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-3.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-3.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-4.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-4.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-5.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-5.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-6.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-6.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-7.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-7.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-8.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-8.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-9.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-9.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-10.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-10.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-11.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-11.jpg"></a>
-      <a href="/images/products/{{ page.image }}-details-12.jpg" data-fancybox="images-preview" data-thumb="/images/products/{{ page.image }}-details-12.jpg"></a>{% endif %}
-    </div>
-  </div>
-  <hr>
-  <div class="row mt30">
-    <div class="col-md-12 mb10">
-      <h2 class="title-underblock custom text-center mb30">Contact Us Now</h2>
-      {% include feedback.html %}
-    </div>
-  </div>
-</div>
-<div class="bg-gray border pt60 pb70">
-  <div class="container">
-    <header class="title-block text-center">
-      <h2 class="title text-center custom mb25">More {{ page.type }}</h2>
-    </header>
-    <div class="row">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
-      <div class="col-sm-6 col-md-3">
-        <div itemscope itemtype="http://schema.org/Product">
-          <div class="thumbnail">
-            <a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="image" src="/images/products/{{ post.image }}-1.jpg" alt="{{ post.title }}"></a>
-            <div class="caption text-center"><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></div>
-          </div>
-        </div>
-      </div>{% endif %}{% endfor %}
+  <div class="col-md-6">
+    <div class="padding-top-2x mt-2 hidden-md-up"></div>
+    <h2 class="padding-top-1x text-normal">{{ page.title }}</h2>
+    <div class="pt-1 mb-2"><span class="text-medium">Style NO:</span> {{ page.title }}</div>
+    <div class="padding-bottom-1x mb-2"><span class="text-medium">Main Material:</span> {{ page.material }}</div>
+    <div class="padding-bottom-1x mb-2"><span class="text-medium">Size:</span> {{ page.size }}</div>
+    <div class="padding-bottom-1x mb-2"><span class="text-medium">Packing:</span> {{ page.Packing }} pcs/ctn</div>
+    <div class="padding-bottom-1x mb-2"><span class="text-medium">CTN size:</span> {{ page.ctn }}</div>
+    <hr class="mb-3">
+    <div class="d-flex flex-wrap justify-content-between">
+      <div class="entry-share mt-2 mb-2">
+        <span class="text-muted">Share:</span>
+        <div class="share-links"><a class="social-button shape-circle sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus" href="#" data-toggle="tooltip" data-placement="top" title="Google +"><i class="socicon-googleplus"></i></a></div>
+      </div>
+      <div class="sp-buttons mt-2 mb-2">
+        <a class="btn btn-primary" href="{{ site.url }}/{{ page.type-en }}/">More {{ page.type }}</a>
+      </div>
     </div>
   </div>
 </div>
