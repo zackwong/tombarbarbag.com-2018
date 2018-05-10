@@ -3,7 +3,7 @@ layout: pages
 ---
 {% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}<div class="col-sm-4 margin-bottom-2x pb-2">
   <div class="card text-center">
-    <img class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}">
+    <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
     <div class="card-body">
       <h4 class="card-title">{{ post.title }}</h4>
       <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}{{ post.url }}">Learn More</a>
