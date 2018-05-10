@@ -27,13 +27,11 @@ layout: article
     <div class="mb-2"><span class="text-medium">Packing:</span> {{ page.packing }} pcs/ctn</div>
     <div class="mb-2"><span class="text-medium">CTN size:</span> {{ page.ctn }}</div>
     <hr class="mb-3">
-    <div class="d-flex flex-wrap justify-content-between">
-      <p><i class="fa fa-phone"></i> {{ site.tel }}</p>
-      <p><i class="fa fa-fax"></i> {{ site.fax }}</p>
-      <p><i class="fa fa-envelope"></i> <a class="navi-link-light" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      <div class="sp-buttons mt-2 mb-2">
-        <a class="btn btn-primary" href="{{ site.url }}/{{ page.type-en }}/">More {{ page.type }}</a>
-      </div>
+    <p><i class="fa fa-phone"></i> {{ site.tel }}</p>
+    <p><i class="fa fa-fax"></i> {{ site.fax }}</p>
+    <p><i class="fa fa-envelope"></i> <a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <div class="sp-buttons mt-2 mb-2">
+      <a class="btn btn-primary" href="{{ site.url }}/{{ page.type-en }}/">More {{ page.type }}</a>
     </div>
   </div>
 </div>
