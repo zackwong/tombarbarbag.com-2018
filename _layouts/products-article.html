@@ -5,10 +5,10 @@ layout: article
   <div class="col-md-7">
     <div class="product-gallery">
       <div class="product-carousel owl-carousel">
-        <div data-hash="one"><img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}"></div>
-        <div data-hash="two"><img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}"></div>
-        <div data-hash="three"><img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}"></div>
-        <div data-hash="four"><img src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}"></div>
+        <div data-hash="one"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="two"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="three"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="four"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}"></a></div>
       </div>
       <ul class="product-thumbnails">
         <li class="active"><a href="#one"><img src="/images/products/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></li>
