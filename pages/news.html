@@ -9,8 +9,8 @@ description: News
 {% for post in site.categories["news"] %}<article class="row">
   <div class="col-md-3 order-md-2">
     <ul class="post-meta">
-      <li><i class="icon-clock"></i> {{ post.date | date:"%d %b %Y" }}</a></li>
-      <li><i class="icon-tag"></i> {{ post.keywords }}</li>
+      <li><i class="fa fa-calendar"></i> {{ post.date | date:"%d %b %Y" }}</a></li>
+      <li><i class="fa fa-tag"></i> {{ post.keywords }}</li>
     </ul>
   </div>
   <div class="col-md-9 order-md-1 blog-post">
