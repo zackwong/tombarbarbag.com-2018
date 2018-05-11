@@ -7,7 +7,9 @@ keywords: New Arrival
 description: New Arrival
 ---
 {% for post in site.categories["products"] %}{% if post.new-arrival == 'new-arrival' %}<div class="col-sm-4 margin-bottom-2x pb-2">
-  <div class="card text-center">
+  <div class="card text-center">{% if post.xilie == 'spring-summer' %}
+    <div class="product-badge text-success">Spring/Summer Collection</div>{% endif %}{% if post.xilie == 'autumn-winter' %}
+    <div class="product-badge text-warning">Autumn/Winter Collection</div>{% endif %}
     <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
     <div class="card-body">
       <h4 class="card-title">{{ post.title }}</h4>
