@@ -1,9 +1,3 @@
-//= require jquery-3.2.1.min.js
-//= require bootstrap.min.js
-//= require jquery.hoverIntent.min.js
-//= require jquery.waypoints.js
-//= require owl.carousel.min.js
-//= require sticky.js
-//= require main.js
+//= require vendor.min.js
+//= require scripts.min.js
 //= require jquery.fancybox.min.js
-//= require add.js
