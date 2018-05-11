@@ -6,8 +6,9 @@ layout: pages
     <div class="card text-center">
       <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
       <div class="card-body">
-        <h4 class="card-title">{{ post.title }}</h4>
-        <p class="{% if post.xilie == 'spring-summer' %}text-success{% endif %}{% if post.xilie == 'autumn-winter' %}text-warning{% endif %}">{% if post.xilie == 'spring-summer' %}Spring/Summer Collection{% endif %}{% if post.xilie == 'autumn-winter' %}Autumn/Winter Collection{% endif %}</p>
+        <h4 class="card-title">{{ post.title }}</h4>{% if post.xilie == 'spring-summer' %}
+        <p class="text-success">Spring/Summer Collection</p>{% endif %}{% if post.xilie == 'autumn-winter' %}
+        <p class="text-warning">Autumn/Winter Collection</p>{% endif %}
         <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}{{ post.url }}">Learn More</a>
       </div>
     </div>
