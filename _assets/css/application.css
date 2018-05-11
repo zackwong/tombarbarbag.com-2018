@@ -1,8 +1,6 @@
 /*
- *= require bootstrap.css
+ *= require vendor.min.css
+ *= require styles.css
  *= require font-awesome.css
- *= require vspacing.min.css
- *= require style.css
  *= require jquery.fancybox.min.css
- *= require googlemap.css
  */
