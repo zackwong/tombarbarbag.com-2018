@@ -4662,7 +4662,7 @@ a.list-group-item {
 }
 
 .owl-carousel .owl-prev::before {
-  content: '\f177';
+  content: '\f060';
 }
 
 .owl-carousel .owl-next {
@@ -4670,7 +4670,7 @@ a.list-group-item {
 }
 
 .owl-carousel .owl-next::before {
-  content: '\f178';
+  content: '\f061';
 }
 
 .owl-carousel.large-controls .owl-prev,
