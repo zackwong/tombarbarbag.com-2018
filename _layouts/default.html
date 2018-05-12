@@ -28,6 +28,7 @@
           <li class="has-children"><span><a href="{{ site.url }}/backpack/">BACKPACK</a></span></li>
           <li class="has-children"><span><a href="{{ site.url }}/accessories/">ACCESSORIES</a></span></li>
           <li class="has-children"><span><a href="{{ site.url }}/childrens-series/">CHILDREN'S SERIES</a></span></li>
+          <li><a href="{{ site.url }}/mens-series/">MEN’S SERIES</a></li>
         </ul>
       </nav>
     </div>
@@ -44,6 +45,7 @@
               <li><a href="{{ site.url }}/backpack/">BACKPACK</a></li>
               <li><a href="{{ site.url }}/accessories/">ACCESSORIES</a></li>
               <li><a href="{{ site.url }}/childrens-series/">CHILDREN'S SERIES</a></li>
+              <li><a href="{{ site.url }}/mens-series/">MEN’S SERIES</a></li>
             </ul>
           </li>
           <li class="has-children{% if page.category == 'catalog' %} active{% endif %}"><a href="{{ site.url }}/catalog/"><span>Catalog</span></a></li>
@@ -96,6 +98,7 @@
                   <li><a href="{{ site.url }}/backpack/">BACKPACK</a></li>
                   <li><a href="{{ site.url }}/accessories/">ACCESSORIES</a></li>
                   <li><a href="{{ site.url }}/childrens-series/">CHILDREN'S SERIES</a></li>
+                  <li><a href="{{ site.url }}/mens-series/">MEN’S SERIES</a></li>
                 </ul>
               </li>
               <li>
@@ -153,13 +156,14 @@
                   <li><a href="{{ site.url }}/backpack/">Backpack</a></li>
                   <li><a href="{{ site.url }}/accessories/">Accessories</a></li>
                   <li><a href="{{ site.url }}/childrens-series/">Children's Series</a></li>
+                  <li><a href="{{ site.url }}/mens-series/">Men's Series</a></li>
                 </ul>
               </section>
             </div>
             <div class="col-md-4 hidden-md-down">
               <section class="widget widget-links widget-light-skin">
                 <h3 class="widget-title">Last News</h3>
-                <ul>{% for post in site.categories["news"] limit:9 %}
+                <ul>{% for post in site.categories["news"] limit:10 %}
                   <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                 </ul>
               </section>
