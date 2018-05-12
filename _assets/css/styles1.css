@@ -6288,6 +6288,51 @@ video {
   font-weight: 500;
 }
 
+.account-link {
+  display: table;
+  width: 100%;
+  padding: 20px 18px;
+  transition: background-color .3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: #313b47;
+  text-decoration: none;
+}
+
+.account-link .user-ava,
+.account-link .user-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.account-link .user-ava {
+  width: 48px;
+}
+
+.account-link .user-ava > img {
+  display: block;
+  width: 48px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.account-link .user-info {
+  padding-left: 8px;
+}
+
+.account-link .user-info > .user-name {
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.account-link .user-info > span {
+  display: block;
+}
+
+.account-link:hover {
+  background-color: #394453;
+}
+
 .site-backdrop {
   display: block;
   position: absolute;
@@ -6392,6 +6437,18 @@ video {
 
 .footer-light .footer-copyright > a:hover {
   color: #0da9ef;
+}
+
+.user-info-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: -1px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  border: 1px solid #e1e7ec;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
 }
 
 .product-card {
@@ -6548,6 +6605,150 @@ video {
 
 .rating-stars > i:last-child {
   margin-right: 0;
+}
+
+.shop-toolbar {
+  display: table;
+  width: 100%;
+}
+
+.shop-toolbar > .column {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.shop-toolbar > .column:last-child {
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .shop-toolbar > .column {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .shop-toolbar > .column:last-child {
+    padding-top: 24px;
+    text-align: center;
+  }
+}
+
+.shop-sorting label,
+.shop-sorting .form-control,
+.shop-sorting span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.shop-sorting span {
+  padding: 8px 0;
+}
+
+.shop-sorting label {
+  margin: 0;
+  padding: 8px 5px 8px 0;
+  color: #9da9b9;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.shop-sorting .form-control {
+  width: 100%;
+  max-width: 186px;
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .shop-sorting label, .shop-sorting .form-control {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
+
+.shop-view {
+  display: inline-block;
+}
+
+.shop-view::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.shop-view > a {
+  display: block;
+  width: 43px;
+  height: 43px;
+  margin-left: 10px;
+  padding: 13px;
+  float: left;
+  transition: background-color .35s;
+  border: 1px solid #e1e7ec;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.shop-view > a span {
+  display: block;
+  position: relative;
+  width: 3px;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #606975;
+}
+
+.shop-view > a span::before, .shop-view > a span::after {
+  display: block;
+  position: absolute;
+  background-color: #606975;
+}
+
+.shop-view > a span:last-child {
+  margin-bottom: 0;
+}
+
+.shop-view > a:hover {
+  background-color: #f5f5f5;
+}
+
+.shop-view > a.active {
+  border-color: #0da9ef;
+  background-color: #0da9ef;
+  cursor: default;
+  pointer-events: none;
+}
+
+.shop-view > a.active span,
+.shop-view > a.active span::before,
+.shop-view > a.active span::after {
+  background-color: #ffffff;
+}
+
+.shop-view > a.grid-view span::before, .shop-view > a.grid-view span::after {
+  top: 0;
+  width: 3px;
+  height: 3px;
+  content: '';
+}
+
+.shop-view > a.grid-view span::before {
+  left: 6px;
+}
+
+.shop-view > a.grid-view span::after {
+  left: 12px;
+}
+
+.shop-view > a.list-view span::before {
+  top: 1px;
+  left: 6px;
+  width: 9px;
+  height: 1px;
+  content: '';
 }
 
 .sp-buttons .btn {
