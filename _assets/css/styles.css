@@ -4652,7 +4652,7 @@ a.list-group-item {
 
 .owl-carousel .owl-prev::before,
 .owl-carousel .owl-next::before {
-  font-family: feather;
+  font-family: FontAwesome;
   font-size: 19px;
   content: '\f115';
 }
@@ -4662,7 +4662,7 @@ a.list-group-item {
 }
 
 .owl-carousel .owl-prev::before {
-  content: '\e094';
+  content: '\f177';
 }
 
 .owl-carousel .owl-next {
@@ -4670,7 +4670,7 @@ a.list-group-item {
 }
 
 .owl-carousel .owl-next::before {
-  content: '\e095';
+  content: '\f178';
 }
 
 .owl-carousel.large-controls .owl-prev,
@@ -6040,8 +6040,8 @@ video {
 
 .offcanvas-toggle::before {
   display: inline-block;
-  font-family: feather;
-  content: '\e120';
+  font-family: FontAwesome;
+  content: '\f0c9';
 }
 
 .offcanvas-toggle:hover {
