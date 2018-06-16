@@ -17,9 +17,8 @@
     </section>
     <section class="widget widget-featured-posts">
       <h3 class="widget-title">Last News</h3>{% for post in site.categories["news"] limit:8 %}
-      
-        <div class="entry">
-          <div class="entry-content">
+      <div class="entry">
+        <div class="entry-content">
           <div itemscope itemtype="http://schema.org/Article">
             <h4 class="entry-title"><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></h4>
           </div>

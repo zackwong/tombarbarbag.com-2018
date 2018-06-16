@@ -165,9 +165,7 @@
               <section class="widget widget-links widget-light-skin">
                 <h3 class="widget-title">Last News</h3>
                 <ul>{% for post in site.categories["news"] limit:10 %}
-                  <div itemscope itemtype="http://schema.org/Article">
-                    <li><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></li>{% endfor %}
-                  </div>
+                  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                 </ul>
               </section>
             </div>
