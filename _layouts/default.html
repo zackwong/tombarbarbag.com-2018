@@ -130,19 +130,21 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <section class="widget widget-light-skin">
-                <h3 class="widget-title">Contact Info</h3>
-                <p class="text-white"><i class="fa fa-map-marker"></i> {{ site.address }}</p>
-                <p class="text-white"><i class="fa fa-phone"></i> {{ site.tel }}</p>
-                <p class="text-white"><i class="fa fa-fax"></i> {{ site.fax }}</p>
-                <p class="text-white"><i class="fa fa-envelope"></i> <a class="navi-link-light" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-                <a class="social-button shape-circle sb-facebook sb-light-skin" href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="social-button shape-circle sb-twitter sb-light-skin" href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="social-button shape-circle sb-linkedin sb-light-skin" href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a class="social-button shape-circle sb-instagram sb-light-skin" href="{{ site.instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a class="social-button shape-circle sb-youtube sb-light-skin" href="{{ site.youtube }}" target="_blank"><i class="fa fa-youtube"></i></a>
-                <a class="social-button shape-circle sb-vk sb-light-skin" href="{{ site.vk }}" target="_blank"><i class="fa fa-vk"></i></a>
-              </section>
+              <div itemscope itemtype="http://schema.org/Organization">
+                <section class="widget widget-light-skin">
+                  <h3 class="widget-title"><span itemprop="name">Contact Info</span></h3>
+                  <p class="text-white"><i class="fa fa-map-marker"></i> <span itemprop="address">{{ site.address }}</span></p>
+                  <p class="text-white"><i class="fa fa-phone"></i> <span itemprop="telephone">{{ site.tel }}</span></p>
+                  <p class="text-white"><i class="fa fa-fax"></i> <span itemprop="faxNumber">{{ site.fax }}</span></p>
+                  <p class="text-white"><i class="fa fa-envelope"></i> <a class="navi-link-light" href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+                  <a itemprop="url" class="social-button shape-circle sb-facebook sb-light-skin" href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a itemprop="url" class="social-button shape-circle sb-twitter sb-light-skin" href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a itemprop="url" class="social-button shape-circle sb-linkedin sb-light-skin" href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a itemprop="url" class="social-button shape-circle sb-instagram sb-light-skin" href="{{ site.instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a itemprop="url" class="social-button shape-circle sb-youtube sb-light-skin" href="{{ site.youtube }}" target="_blank"><i class="fa fa-youtube"></i></a>
+                  <a itemprop="url" class="social-button shape-circle sb-vk sb-light-skin" href="{{ site.vk }}" target="_blank"><i class="fa fa-vk"></i></a>
+                </section>
+              </div>
             </div>
             <div class="col-md-3">
               <section class="widget widget-links widget-light-skin">
