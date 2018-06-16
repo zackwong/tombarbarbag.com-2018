@@ -17,9 +17,11 @@
     </section>
     <section class="widget widget-featured-posts">
       <h3 class="widget-title">Last News</h3>{% for post in site.categories["news"] limit:8 %}
-      <div class="entry">
-        <div class="entry-content">
-          <h4 class="entry-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h4>
+      <div itemscope itemtype="http://schema.org/Article">
+        <div class="entry">
+          <div class="entry-content">
+            <h4 class="entry-title"><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></h4>
+          </div>
         </div>
       </div>{% endfor %}
     </section>
