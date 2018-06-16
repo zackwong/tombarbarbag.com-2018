@@ -1,9 +1,13 @@
 ---
 layout: article
 ---
-<h2 class="text-center">{{ page.title }}</h2>
-<p class="text-center">{{ page.date | date:"%d %b %Y" }}</p>
-<div class="padding-top-2x">
-  {{ content }}
+<div itemscope itemtype="http://schema.org/Article">
+  <h2 class="text-center"><span itemprop="headline">{{ page.title }}</span></h2>
+  <p class="text-center"><span itemprop="dateCreated">{{ page.date | date:"%d %b %Y" }}</span></p>
+  <div class="padding-top-2x">
+    <span itemprop="articleBody">
+      {{ content }}
+    </span>
+  </div>
 </div>
 <p class="padding-top-2x text-center"><a href="{{ site.url }}/{{ page.type-en }}/" class="btn btn-primary btn-sm mt-4">More News</a></p>
