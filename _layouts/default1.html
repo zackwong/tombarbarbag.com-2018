@@ -11,13 +11,7 @@
     <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/tombarbar-icon.jpg">
     <meta name="apple-mobile-web-app-title" content="TOMBARBAR">
     {% stylesheet application %}
-    <script src="/assets/modernizr.min.js"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-      }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>{% if page.category == 'contact' %}
+    <script src="/assets/modernizr.min.js"></script>{% if page.category == 'contact' %}
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAACWdZfvsxk4RffdTsNZ5vXdi4Y8onJ1I" type="text/javascript"></script>{% endif %}
   </head>
   <body>
@@ -65,7 +59,11 @@
       </div>
       <div class="topbar-column">
         <div class="lang-currency-switcher-wrap">
-          <div id="google_translate_element"></div>
+          <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="/images/assets/en.png"></span></div>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{ site.url }}"><img src="/images/assets/en.png" alt="English">English</a>
+            <a class="dropdown-item" href="#"><img src="/images/assets/ru.png" alt="русский">русский</a>
+          </div>
         </div>
       </div>
     </div>
