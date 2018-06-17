@@ -8,13 +8,15 @@ description: New Arrival
 ---
 <div class="row">{% for post in site.categories["products"] %}{% if post.new-arrival == 'new-arrival' %}
   <div class="col-sm-4 margin-bottom-2x pb-2">
-    <div class="card text-center">
-      <a href="{{ site.url }}{{ post.url }}"><img class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
-      <div class="card-body">
-        <h4 class="card-title">{{ post.title }}</h4>{% if post.xilie == 'spring-summer' %}
-        <p class="text-success">Spring/Summer Collection</p>{% endif %}{% if post.xilie == 'autumn-winter' %}
-        <p class="text-warning">Autumn/Winter Collection</p>{% endif %}
-        <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}{{ post.url }}">Learn More</a>
+    <div itemscope itemtype="http://schema.org/Product">
+      <div class="card text-center">
+        <a itemprop="url" href="{{ site.url }}{{ post.url }}"><img itemprop="image" class="card-img-top" src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
+        <div class="card-body">
+          <h4 class="card-title"><span itemprop="name">{{ post.title }}</span></h4>{% if post.xilie == 'spring-summer' %}
+          <p class="text-success">Spring/Summer Collection</p>{% endif %}{% if post.xilie == 'autumn-winter' %}
+          <p class="text-warning">Autumn/Winter Collection</p>{% endif %}
+          <a itemprop="url" class="btn btn-outline-primary btn-sm" href="{{ site.url }}{{ post.url }}">Learn More</a>
+        </div>
       </div>
     </div>
   </div>{% endif %}{% endfor %}
