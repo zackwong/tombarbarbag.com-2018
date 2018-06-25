@@ -4,5 +4,6 @@ layout: null
 User-agent: *
 Disallow: /Error.html
 Disallow: /favicon.ico
+Disallow: /google94aa487584554f01.html
 
 Sitemap: {{ site.url }}/sitemap.xml
