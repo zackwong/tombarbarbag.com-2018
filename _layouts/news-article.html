@@ -4,6 +4,13 @@ layout: article
 <div itemscope itemtype="http://schema.org/Article">
   <h2 class="text-center"><span itemprop="headline">{{ page.title }}</span></h2>
   <p class="text-center"><span itemprop="dateCreated">{{ page.date | date:"%d %b %Y" }}</span></p>
+  <div class="single-post-footer">
+    <div class="column">
+                <div class="entry-share"><span class="text-muted">Share post:</span>
+                  <div class="share-links"><a class="social-button shape-circle sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google +"><i class="socicon-googleplus"></i></a></div>
+                </div>
+              </div>
+            </div>
   <div class="padding-top-2x">
     <span itemprop="articleBody">
       {{ content }}
