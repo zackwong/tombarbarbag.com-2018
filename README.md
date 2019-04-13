@@ -19,7 +19,8 @@ tombarbarbag.com-2018
       index index.html;
       root /srv/tombarbarbag.com-2018/_site;
       error_page 404 /Error.html;
-      ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+      add_header Strict-Transport-Security "max-age=15768000" always;
+      ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
       ssl_ciphers HIGH:!aNULL:!MD5:!DH;
     }
     server {
