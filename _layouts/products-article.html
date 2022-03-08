@@ -1,98 +1,90 @@
 ---
 layout: article
 ---
-<div itemscope itemtype="http://schema.org/Product">
-  <div class="row">
-    <div class="col-md-7">
-      <div class="product-gallery">
-        <div class="product-carousel owl-carousel">
-          <div data-hash="one"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
-          <div data-hash="two"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}"></a></div>
-          <div data-hash="three"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}"></a></div>
-          <div data-hash="four"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img itemprop="image" src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}"></a></div>
-        </div>
-        <ul class="product-thumbnails">
-          <li class="active"><a href="#one"><img itemprop="image" src="/images/products/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></li>
-          <li><a href="#two"><img itemprop="image" src="/images/products/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></li>
-          <li><a href="#three"><img itemprop="image" src="/images/products/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></li>
-          <li><a href="#four"><img itemprop="image" src="/images/products/{{ page.image }}-4s.jpg" alt="{{ page.title }}"></a></li>
-        </ul>
+<div class="row">
+  <div class="col-md-7">
+    <div class="product-gallery">
+      <div class="product-carousel owl-carousel">
+        <div data-hash="one"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-1.jpg"><img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="two"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-2.jpg"><img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="three"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-3.jpg"><img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}"></a></div>
+        <div data-hash="four"><a data-fancybox="gallery" data-caption="{{ page.title }}" href="/images/products/{{ page.image }}-4.jpg"><img src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}"></a></div>
       </div>
+      <ul class="product-thumbnails">
+        <li class="active"><a href="#one"><img src="/images/products/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#two"><img src="/images/products/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#three"><img src="/images/products/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></li>
+        <li><a href="#four"><img src="/images/products/{{ page.image }}-4s.jpg" alt="{{ page.title }}"></a></li>
+      </ul>
     </div>
-    <div class="col-md-5">
-      <div class="padding-top-2x mt-2 hidden-md-up"></div>
-      <h2 class="padding-top-1x text-normal"><span itemprop="name">{{ page.title }}</span></h2>
-      <div class="pt-1 mb-2"><span class="text-medium">Style NO:</span> <span itemprop="name">{{ page.title }}</span></div>{% if page.xilie == 'spring-summer' %}
-      <div class="mb-2"><span class="text-medium">Collection:</span> Spring/Summer</div>{% endif %}{% if page.xilie == 'autumn-winter' %}
-      <div class="mb-2"><span class="text-medium">Collection:</span> Autumn/Winter</div>{% endif %}
-      <div class="mb-2"><span class="text-medium">Main Material:</span> {{ page.main-material }}</div>
-      <div class="mb-2"><span class="text-medium">Lining Material:</span> {{ page.lining-material }}</div>
-      <div class="mb-2"><span class="text-medium">Size:</span> {{ page.size }}</div>
-      <div class="mb-2"><span class="text-medium">Packing:</span> {{ page.packing }} pcs/ctn</div>
-      <div class="mb-2"><span class="text-medium">CTN size:</span> {{ page.ctn }}</div>
-      <hr class="mb-3">
-      <p><i class="fa fa-phone"></i> {{ site.tel }}</p>
-      <p><i class="fa fa-fax"></i> {{ site.fax }}</p>
-      <p><i class="fa fa-envelope"></i> <a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="padding-top-2x mt-2 hidden-md-up"></div>
+    <h2 class="padding-top-1x text-normal">{{ page.title }}</h2>
+    <div class="pt-1 mb-2"><span class="text-medium">Style NO:</span> {{ page.title }}</div>{% if page.xilie == 'spring-summer' %}
+    <div class="mb-2"><span class="text-medium">Collection:</span> Spring/Summer</div>{% endif %}{% if page.xilie == 'autumn-winter' %}
+    <div class="mb-2"><span class="text-medium">Collection:</span> Autumn/Winter</div>{% endif %}
+    <div class="mb-2"><span class="text-medium">Main Material:</span> {{ page.main-material }}</div>
+    <div class="mb-2"><span class="text-medium">Lining Material:</span> {{ page.lining-material }}</div>
+    <div class="mb-2"><span class="text-medium">Size:</span> {{ page.size }}</div>
+    <div class="mb-2"><span class="text-medium">Packing:</span> {{ page.packing }} pcs/ctn</div>
+    <div class="mb-2"><span class="text-medium">CTN size:</span> {{ page.ctn }}</div>
+    <hr class="mb-3">
+    <p><i class="fa fa-phone"></i> {{ site.tel }}</p>
+    <p><i class="fa fa-fax"></i> {{ site.fax }}</p>
+    <p><i class="fa fa-envelope"></i> <a class="navi-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   </div>
 </div>
 <div class="row padding-top-3x">
   <div class="col-md-12"><h3 class="text-center mb-30">You May Also Like</h3></div>
   <div class="col-md-4">
-    <div itemscope itemtype="http://schema.org/Product">
-      <div class="card mb-30">
-        <a itemprop="url" class="card-img-tiles" href="{{ site.url }}/{{ page.type-en }}/">
-          <div class="inner">
-            <div class="main-img"><img itemprop="image" src="/images/products/{{ page.type-en }}-1.jpg" alt="{{ page.type }}"></div>
-            <div class="thumblist">
-              <img itemprop="image" src="/images/products/{{ page.type-en }}-2.jpg" alt="{{ page.type }}">
-              <img itemprop="image" src="/images/products/{{ page.type-en }}-3.jpg" alt="{{ page.type }}">
-            </div>
+    <div class="card mb-30">
+      <a class="card-img-tiles" href="{{ site.url }}/{{ page.type-en }}/">
+        <div class="inner">
+          <div class="main-img"><img src="/images/products/{{ page.type-en }}-1.jpg" alt="{{ page.type }}"></div>
+          <div class="thumblist">
+            <img src="/images/products/{{ page.type-en }}-2.jpg" alt="{{ page.type }}">
+            <img src="/images/products/{{ page.type-en }}-3.jpg" alt="{{ page.type }}">
           </div>
-        </a>
-        <div class="card-body text-center">
-          <h4 class="card-title"><span itemprop="name">{{ page.type }}</span></h4>
-          <a itemprop="url" class="btn btn-outline-primary btn-sm" href="{{ site.url }}/{{ page.type-en }}/">View Products</a>
         </div>
+      </a>
+      <div class="card-body text-center">
+        <h4 class="card-title">{{ page.type }}</h4>
+        <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}/{{ page.type-en }}/">View Products</a>
       </div>
     </div>
   </div>
   <div class="col-md-4 col-sm-6">
-    <div itemscope itemtype="http://schema.org/Product">
-      <div class="card mb-30">
-        <a itemprop="url" class="card-img-tiles" href="{{ site.url }}/featured-products/">
-          <div class="inner">
-            <div class="main-img"><img itemprop="image" src="/images/products/featured-products-1.jpg" alt="Featured Products"></div>
-            <div class="thumblist">
-              <img itemprop="image" src="/images/products/featured-products-2.jpg" alt="Featured Products">
-              <img itemprop="image" src="/images/products/featured-products-3.jpg" alt="Featured Products">
-            </div>
+    <div class="card mb-30">
+      <a class="card-img-tiles" href="{{ site.url }}/featured-products/">
+        <div class="inner">
+          <div class="main-img"><img src="/images/products/featured-products-1.jpg" alt="Featured Products"></div>
+          <div class="thumblist">
+            <img src="/images/products/featured-products-2.jpg" alt="Featured Products">
+            <img src="/images/products/featured-products-3.jpg" alt="Featured Products">
           </div>
-        </a>
-        <div class="card-body text-center">
-          <h4 class="card-title"><span itemprop="name">Featured Products</span></h4>
-          <a itemprop="url" class="btn btn-outline-primary btn-sm" href="{{ site.url }}/featured-products/">View Products</a>
         </div>
+      </a>
+      <div class="card-body text-center">
+        <h4 class="card-title">Featured Products</h4>
+        <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}/featured-products/">View Products</a>
       </div>
     </div>
   </div>
   <div class="col-md-4 col-sm-6">
-    <div itemscope itemtype="http://schema.org/Product">
-      <div class="card mb-30">
-        <a itemprop="url" class="card-img-tiles" href="{{ site.url }}/new-arrival/">
-          <div class="inner">
-            <div class="main-img"><img itemprop="image" src="/images/products/new-arrival-1.jpg" alt="New Arrival"></div>
-            <div class="thumblist">
-              <img itemprop="image" src="/images/products/new-arrival-2.jpg" alt="New Arrival">
-              <img itemprop="image" src="/images/products/new-arrival-3.jpg" alt="New Arrival">
-            </div>
+    <div class="card mb-30">
+      <a class="card-img-tiles" href="{{ site.url }}/new-arrival/">
+        <div class="inner">
+          <div class="main-img"><img src="/images/products/new-arrival-1.jpg" alt="New Arrival"></div>
+          <div class="thumblist">
+            <img src="/images/products/new-arrival-2.jpg" alt="New Arrival">
+            <img src="/images/products/new-arrival-3.jpg" alt="New Arrival">
           </div>
-        </a>
-        <div class="card-body text-center">
-          <h4 class="card-title"><span itemprop="name">New Arrival</span></h4>
-          <a itemprop="url" class="btn btn-outline-primary btn-sm" href="{{ site.url }}/new-arrival/">View Products</a>
         </div>
+      </a>
+      <div class="card-body text-center">
+        <h4 class="card-title">New Arrival</h4>
+        <a class="btn btn-outline-primary btn-sm" href="{{ site.url }}/new-arrival/">View Products</a>
       </div>
     </div>
   </div>  
