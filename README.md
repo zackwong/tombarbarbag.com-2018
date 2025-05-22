@@ -14,7 +14,7 @@ tombarbarbag.com-2018
     server {
       listen 443 ssl;
       server_name www.tombarbarbag.com;
-      ssl_certificate tombarbarbag.pem;
+      ssl_certificate tombarbarbag.crt;
       ssl_certificate_key tombarbarbag.key;
       index index.html;
       root /srv/tombarbarbag.com-2018/_site;
@@ -26,7 +26,7 @@ tombarbarbag.com-2018
     server {
         listen 443 ssl;
         server_name tombarbarbag.com;
-        ssl_certificate tombarbarbag.pem;
+        ssl_certificate tombarbarbag.crt;
         ssl_certificate_key tombarbarbag.key;
         return 301 https://www.tombarbarbag.com$request_uri;
     }
